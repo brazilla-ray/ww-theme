@@ -686,6 +686,7 @@ textarea {
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
 	left: auto;
+	position: relative;
 }
 
 .main-navigation li {
@@ -700,7 +701,16 @@ textarea {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-toggle,
+.main-navigation.toggled li {
+	width: 100%;
+	text-align: center;
 }
 
 @media screen and (min-width: 37.5em) {
