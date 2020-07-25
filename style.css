@@ -680,13 +680,14 @@ textarea {
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+	width: 100%;
 }
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
 	left: auto;
 	position: relative;
+	left: 0;
 }
 
 .main-navigation li {
@@ -705,6 +706,7 @@ textarea {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 }
 
 .menu-toggle,
