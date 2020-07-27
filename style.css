@@ -652,6 +652,11 @@ textarea {
 	width: 100%;
 }
 
+.main-navigation button {
+	border: none;
+	background: none;
+}
+
 .main-navigation ul {
 	display: none;
 	list-style: none;
