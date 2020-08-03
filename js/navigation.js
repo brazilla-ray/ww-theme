@@ -61,13 +61,13 @@
 
 	// Toggle focus each time a menu link is focused or blurred.
 	for ( const link of links ) {
-		link.addEventListener( 'focus', toggleFocus, true );
-		link.addEventListener( 'blur', toggleFocus, true );
+		link.parentNode.addEventListener( 'focus', toggleFocus, true );
+		link.parentNode.addEventListener( 'blur', toggleFocus, true );
 	}
 
 	// Toggle focus each time a menu link with children receive a touch event.
 	for ( const link of linksWithChildren ) {
-		link.addEventListener( 'touchstart', toggleFocus, false );	
+		link.addEventListener( 'touchstart', toggleFocus, false );
 	}
 
 	document.addEventListener( 'click', function() {
