@@ -20,7 +20,7 @@
 	}
 
 	const menu = siteNavigation.getElementsByTagName( 'ul' )[ 0 ];
-
+	
 	// Hide menu toggle button if menu is empty and return early.
 	if ( 'undefined' === typeof menu ) {
 		button.style.display = 'none';
@@ -31,10 +31,6 @@
 		menu.classList.add( 'nav-menu' );
 	}
 
-	if ( ! menu.classList.contains( 'toggled') ) {
-		menu.classList.remove( 'focus' );
-	}
-	
 	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
 	button.addEventListener( 'click', function() {
 		siteNavigation.classList.toggle( 'toggled' );
@@ -56,10 +52,9 @@
 		}
 	} );
 
-	
-
 	// Get all the link elements within the menu.
 	const links = menu.getElementsByTagName( 'a' );
+
 
 	// Get all the link elements with children within the menu.
 	const linksWithChildren = menu.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
@@ -72,10 +67,17 @@
 
 	// Toggle focus each time a menu link with children receive a touch event.
 	for ( const link of linksWithChildren ) {
-		link.addEventListener( 'touchstart', toggleFocus, false );
+		link.addEventListener( 'touchstart', toggleFocus, false );	
 	}
 
-	
+	document.addEventListener( 'click', function() {
+		const isToggled = siteNavigation.classList.contains( 'toggled' );
+		if ( ! isToggled ) {
+			for ( const link of linksWithChildren ) {
+				link.parentNode.classList.remove( 'focus' );
+			}
+		}
+	} );
 
 	/**
 	 * Sets or removes .focus class on an element.
