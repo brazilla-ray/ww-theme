@@ -31,6 +31,10 @@
 		menu.classList.add( 'nav-menu' );
 	}
 
+	if ( ! menu.classList.contains( 'toggled') ) {
+		menu.classList.remove( 'focus' );
+	}
+	
 	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
 	button.addEventListener( 'click', function() {
 		siteNavigation.classList.toggle( 'toggled' );
@@ -52,6 +56,8 @@
 		}
 	} );
 
+	
+
 	// Get all the link elements within the menu.
 	const links = menu.getElementsByTagName( 'a' );
 
@@ -68,6 +74,8 @@
 	for ( const link of linksWithChildren ) {
 		link.addEventListener( 'touchstart', toggleFocus, false );
 	}
+
+	
 
 	/**
 	 * Sets or removes .focus class on an element.
