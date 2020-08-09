@@ -547,8 +547,8 @@ a:active {
 }
 
 a:focus {
-	/* outline: thin dotted; */
-	outline: 2px solid #b80bd8;
+	outline: thin dotted;
+	/* outline: 2px solid #b80bd8; */
 }
 
 a:hover,
@@ -744,9 +744,9 @@ textarea {
 	left: -999em;
 	top: 0;
 } */
-.main-navigation ul:focus-within {
-	outline: 2px solid #b80bd8;
-}
+/* .main-navigation ul:focus-within { */
+	/* outline: 2px solid #b80bd8; */
+/* } */
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul, {
@@ -765,9 +765,9 @@ textarea {
 	left: 0;
 }
 
-.main-navigation ul li.focus > a {
+/* .main-navigation ul li.focus > a {
 	outline: 2px solid #b80bd8;
-}
+} */
 
 /* .main-navigation li {
 	position: relative;
