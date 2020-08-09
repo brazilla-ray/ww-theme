@@ -587,7 +587,7 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
-	outline: 2px solid #b80bd8;
+	/* outline: 2px solid #b80bd8; */
 }
 
 input[type="text"],
@@ -798,6 +798,9 @@ textarea {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
+}
+.menu-toggle:focus-within > ul {
+	outline: thin dotted;
 }
 
 .current_page_item {
