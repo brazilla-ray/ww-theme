@@ -681,7 +681,7 @@ textarea {
 
 .site-description {
 	letter-spacing: 0.25em;
-	color: #999;
+	color: inherit;
 }
 
 /* Navigation
@@ -791,6 +791,10 @@ textarea {
 	font-size: 0.75em;
 }
 
+.current_page_item {
+	color: #b80bd8;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -801,10 +805,6 @@ textarea {
 }
 .menu-toggle:focus-within > ul {
 	outline: thin dotted;
-}
-
-.current_page_item {
-	color: #999;
 }
 
 /* .menu-toggle,
