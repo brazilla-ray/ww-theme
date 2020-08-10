@@ -818,16 +818,44 @@ textarea {
 	text-align: right;
 } */
 
-/* @media screen and (min-width: 37.5em) {
+@media screen and (min-width: 37.5em) {
 
-	.menu-toggle {
-		display: none;
+	.site-header {
+		flex-flow: row nowrap;
+		justify-content: space-around;
+	}
+
+	.site-branding {
+		flex-basis: 25%;
+		margin-top: 0.78em;
+	}
+
+	.menu-toggle,
+	.menu-burger {
+			display: none;
+	}
+
+	.main-navigation {
+		flex-basis: auto;
+		display: flex;
+		justify-content: flex-end;
 	}
 
 	.main-navigation ul {
 		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
 	}
-} */
+
+	.main-navigation a {
+		border: none;
+	}
+
+	.menu-item {
+		padding-left: 30px;
+	}
+}
 
 /* .site-main .comment-navigation,
 .site-main
