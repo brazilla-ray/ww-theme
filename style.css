@@ -670,7 +670,8 @@ textarea {
 	color: #000;
 }
 
-.site-branding p {
+.site-branding h1 {
+	font-size: 1em;
 	padding-left: 1em;
 	margin: 1em 0 0;
 }
@@ -718,7 +719,7 @@ textarea {
 	border: none;
 	background: none;
 	position: absolute;
-	top: 2em;
+	top: 1em;
 	right: 1em;
 }
 
@@ -749,7 +750,7 @@ textarea {
 /* } */
 
 .main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul, {
+.main-navigation ul ul li.focus > ul {
 	display: block;
 	left: auto;
 }
