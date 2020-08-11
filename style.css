@@ -887,6 +887,10 @@ textarea {
 
 /* Posts and pages
 --------------------------------------------- */
+.site-main {
+	margin: 0 1em 0;
+}
+
 .sticky {
 	display: block;
 }
