@@ -13,7 +13,7 @@
   <?php
   $args = array(
     'post_type' => 'artwork',
-    'posts_per_page' => 10,
+    'posts_per_page' => 1,
   );
 
   $loop = new WP_Query( $args );
