@@ -11,8 +11,15 @@
   <main id="primary" class="site-main">
 
     <?php
-    while ( have_posts() ) :
-      the_post();
+    $args = array(
+      'post_type' => 'artwork',
+      'posts_per_page' => 1,
+    );
+
+    $loop = new WP_Query( $args );
+
+    while ( $loop->have_posts() ) :
+      $loop->the_post();
 
       get_template_part( 'template-parts/content', 'front' );
 

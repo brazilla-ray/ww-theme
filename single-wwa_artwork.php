@@ -12,7 +12,7 @@
   
   <?php
   $args = array(
-    'post_type' => 'artwork',
+    'post_type' => 'wwa_artwork',
     'posts_per_page' => 1,
   );
 

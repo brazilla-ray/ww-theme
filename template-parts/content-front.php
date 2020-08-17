@@ -7,5 +7,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <h2>ohai</h2>
+  <h2>ohai!</h2>
+  
+  <div>
+    <?php the_content(); ?>
+  </div>
+
 </article>
