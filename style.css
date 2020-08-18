@@ -895,6 +895,14 @@ textarea {
 	font-size: 1em;
 }
 
+.entry-title h3 {
+	font-size: 1em;
+}
+
+.entry-title a {
+	text-decoration: none;
+}
+
 .sticky {
 	display: block;
 }
