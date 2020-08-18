@@ -11,20 +11,12 @@
  <main id="primary" class="site-main">
   
   <?php
-  $args = array(
-    'post_type' => 'wwa_artwork',
-    'posts_per_page' => 1,
-  );
-
-  $loop = new WP_Query( $args );
-
-  while ( $loop->have_posts() ) :
-    $loop->the_post();
+  while ( have_posts() ) :
+    the_post(  );
 
     get_template_part( 'template-parts/content', get_post_type() );
 
-  endwhile; // End of the loop.
-  
+  endwhile;
   ?>
  </main><!-- #main -->
 
