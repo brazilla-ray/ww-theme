@@ -888,7 +888,11 @@ textarea {
 /* Posts and pages
 --------------------------------------------- */
 .site-main {
-	margin: 0 1em 0;
+	margin: 2em 1em;
+}
+
+.front_page-content-title {
+	font-size: 1em;
 }
 
 .sticky {
