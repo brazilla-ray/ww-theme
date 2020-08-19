@@ -903,6 +903,20 @@ textarea {
 	text-decoration: none;
 }
 
+.wwa_artwork {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.tag-small .entry-content {
+	flex-basis: 50%;
+}
+
+.tag-small .entry-caption {
+	align-self: flex-end;
+}
+
 .sticky {
 	display: block;
 }
