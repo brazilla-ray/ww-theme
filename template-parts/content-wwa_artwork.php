@@ -22,6 +22,7 @@
     <?php
     endif;
     ?>
+    
   </div><!--.entry-content -->
   <div class="entry-caption">
     <?php

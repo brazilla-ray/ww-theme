@@ -11,8 +11,9 @@
 <main id="primary" class="site-main">
   <section class="site-main-section">
     <h2 class="front_page-content-title">
-      recent work
+      Recent Work
     </h2>
+    <p class="front_page-content-more-info">(Click images for more information.)</p>
     <?php
     while ( have_posts() ) :
       the_post();
