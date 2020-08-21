@@ -7,10 +7,32 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <h2>ohai!</h2>
-  
-  <div>
-    <?php the_content(); ?>
-  </div>
+  <div class="entry-content-front">
+    <?php $image = wp_get_attachment_image_src( get_field('image'), 'large'); ?>
+    <a href="<?php echo esc_url( get_permalink() ) ?>">
+      <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image'))?>" />
+    </a>
+  </div><!--.entry-content-front -->
+  <div class="entry-caption">
+    <?php
+    if ( is_singular() ) :
+      the_title( '<h2 class="entry-title">', '</h2>' );
+    ?>
+      <p class="entry-field">
+        <?php the_field( 'medium' ); ?>
+      </p>
+      <p class="entry-field">
+        <?php the_field( 'date' ); ?>
+      </p>
+      <p class="entry-field">
+        <? the_field( 'dimensions' ); ?>
+      </p>
+    <?php
+    else :
+      the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+    endif;
+    ?>
+  </div><!-- entry-caption -->
+ 
 
-</article>
+ </article>
