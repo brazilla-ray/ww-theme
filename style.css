@@ -677,7 +677,7 @@ textarea {
 }
 
 .site-title {
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 .site-description {
@@ -888,33 +888,53 @@ textarea {
 /* Posts and pages
 --------------------------------------------- */
 .site-main {
+	
 	margin: 2em 1em;
 }
 
 .front_page-content-title {
-	font-size: 1em;
+	font-family: 'Baskerville', 'Baskerville Old Face', 'Hoefler Text', 'Garamond', 'Times New Roman', serif;
+	font-size: 1.5em;
+	font-weight: normal;
+	text-transform: capitalize;
+	margin: 2em 0 0;
 }
 
-.entry-title h3 {
+.entry-title {
 	font-size: 1em;
+	font-weight: normal;
 }
 
 .entry-title a {
+	color: #555555;
 	text-decoration: none;
+	border-bottom: 2px solid #b80bd8;
+	padding-bottom: 0.25em;
 }
 
 .wwa_artwork {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column nowrap;
 	justify-content: space-between;
+	margin-top: 2em;
 }
 
 .tag-small .entry-content {
-	flex-basis: 50%;
+	width: 50%;
+	margin: 0 auto;
 }
 
-.tag-small .entry-caption {
-	align-self: flex-end;
+.tag-medium .entry-content {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.entry-caption {
+	align-self: center;
+}
+
+.tag-medium .entry-content {
+	flex-basis: 75%;
 }
 
 .sticky {
