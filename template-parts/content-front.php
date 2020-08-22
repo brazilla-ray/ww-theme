@@ -13,24 +13,9 @@
       <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image'))?>" />
     </a>
   </div><!--.entry-content-front -->
-  <div class="entry-caption">
+  <div class="entry-caption-front">
     <?php
-    if ( is_singular() ) :
-      the_title( '<h2 class="entry-title">', '</h2>' );
-    ?>
-      <p class="entry-field">
-        <?php the_field( 'medium' ); ?>
-      </p>
-      <p class="entry-field">
-        <?php the_field( 'date' ); ?>
-      </p>
-      <p class="entry-field">
-        <? the_field( 'dimensions' ); ?>
-      </p>
-    <?php
-    else :
       the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
-    endif;
     ?>
   </div><!-- entry-caption -->
  

@@ -13,7 +13,7 @@
     <h2 class="front_page-content-title">
       Recent Work
     </h2>
-    <p class="front_page-content-more-info">(Click images for more information.)</p>
+    <p class="front_page-content-more-info">(Click on images for details.)</p>
     <?php
     while ( have_posts() ) :
       the_post();
