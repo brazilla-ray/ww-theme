@@ -889,7 +889,6 @@ textarea {
 /* Posts and pages
 --------------------------------------------- */
 .site-main {
-	
 	margin-top: 2em;
 }
 
@@ -977,6 +976,39 @@ textarea {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+@media screen and (min-width: 37.5em) {
+	.site-main {
+		margin: 5em 9em 0;
+	}
+	.site-main-section {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: stretch;
+		justify-content: space-between;
+	}
+
+	.site-main-section header {
+		flex: 1 0 100%;
+		/* margin: 0 7em 0; */
+	}
+
+	.site-main-section article {
+		flex: 0 1 40%;
+		margin: 1em auto;
+	}
+
+	.entry-content-front {
+		margin: auto;
+		background: none;
+	}
+
+	.wwa_artwork {
+		justify-content: flex-end;
+		margin-top: 5em;
+		background-color: #f1f1f1;
+	}
 }
 
 /* Comments
