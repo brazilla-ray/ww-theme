@@ -16,18 +16,15 @@
       </h2>
       <p class="front_page-content-more-info">(Click on images for details.)</p>
     </header>
-    <?php
-    while ( have_posts() ) :
-      the_post();
-      get_template_part( 'template-parts/content', 'front' );
-    endwhile;
-    ?>
+    <div class="site-main-section-content">
+      <?php
+      while ( have_posts() ) :
+        the_post();
+        get_template_part( 'template-parts/content', 'front' );
+      endwhile;
+      ?>
+    </div><!-- site-main-section-content -->
   </section>
-  <section class="site-main-section">
-    <header class="site-main-section-header">
-      <h2>About</h2>
-    </header><!-- site-main-section-header -->
-  </section><!-- site-main-section -->
 </main>
 
  <?php
