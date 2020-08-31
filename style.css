@@ -1011,9 +1011,9 @@ textarea {
 		margin-top: 3em;
 	}
 
-	.site-main-section article:last-child {
+	.site-main-section article:last-child:nth-child(odd) {
 		margin: 3em auto 0;
-		flex: 0 1 40%;
+		flex: 0 0 40%;
 	}
 
 	.entry-content-front {
