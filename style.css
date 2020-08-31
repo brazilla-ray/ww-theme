@@ -1018,13 +1018,12 @@ textarea {
 
 	.entry-content-front {
 		margin: auto;
-		background: none;
+		background-color: #f1f1f1;
 	}
 
 	.wwa_artwork {
 		justify-content: flex-end;
 		margin-top: 5em;
-		background-color: #f1f1f1;
 	}
 
 	.entry-caption-front {
