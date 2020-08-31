@@ -13,7 +13,7 @@
       <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image'))?>" />
     </a>
   </div><!--.entry-content-front -->
-  <div class="entry-caption-front">
+  <div class="entry-caption">
     <?php
       the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
     ?>
