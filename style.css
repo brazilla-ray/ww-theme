@@ -936,7 +936,7 @@ textarea {
 .entry-content-front {
 	display: flex;
 	justify-content: center;
-	background-color: #f0f0f0;
+	/* background-color: #f0f0f0; */
 	line-height: 0;
 	padding: 1em 0;
 	margin-top: 1em;
