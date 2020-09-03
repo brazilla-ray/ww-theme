@@ -908,6 +908,12 @@ textarea {
 	margin: 0;
 }
 
+.site-main-section-header p {
+	font-size: 0.75em;
+	font-style: italic;
+	margin: 0;
+}
+
 .entry-field {
 	font-size: 0.75em;
 	/* font-style: italic; */
