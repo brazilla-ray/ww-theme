@@ -11,7 +11,7 @@
   <div class="entry-content">
     <?php $image = wp_get_attachment_image_src( get_field('image'), 'large'); 
     if ( is_singular() ) : ?>
-    <a href="<?php echo esc_url(get_home_url() ) ?>">
+    <a href="javascript:history.back()">
       <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image'))?>" />
     </a>
     <?php
