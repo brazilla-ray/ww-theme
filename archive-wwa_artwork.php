@@ -10,12 +10,9 @@
 
 <main id="primary" class="site-main">
   <section class="site-main-section">
-    <header class="site-main-section-header">
-      <h2 class="front_page-content-title">
-        Artwork
-      </h2>
-      <p class="front_page-content-more-info">(Click on images for details.)</p>
-    </header>
+    <h2 class="site-main-section-header">
+      Artwork
+    </h2>
     <div class="site-main-section-content">
       <?php
       while ( have_posts() ) :

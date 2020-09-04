@@ -914,6 +914,10 @@ textarea {
 	margin: 0;
 }
 
+.site-main-section-subheading {
+	font-weight: normal;
+}
+
 .entry-field {
 	font-size: 0.75em;
 	/* font-style: italic; */
@@ -1001,7 +1005,7 @@ textarea {
 		margin: 0 auto;
 	}
 
-	.site-main-section header {
+	.site-main-section-header {
 		flex: 1 0 100%;
 	}
 
