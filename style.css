@@ -889,7 +889,6 @@ textarea {
 /* Posts and pages
 --------------------------------------------- */
 .site-main {
-	/* margin-top: 2em; */
 	display: flex;
 	flex-flow: row wrap;
 }
@@ -908,14 +907,35 @@ textarea {
 	margin: 0;
 }
 
-.site-main-section-header p {
-	font-size: 0.75em;
-	font-style: italic;
-	margin: 0;
-}
-
 .site-main-section-subheading {
 	font-weight: normal;
+}
+
+.wwa_artwork {
+	display: flex;
+	flex-flow: column;
+	margin-top: 1em;
+}
+
+.entry-content {
+	display: flex;
+	justify-content: center;
+	/* background-color: #f0f0f0; */
+	line-height: 0;
+	padding: 1em 0;
+	margin-top: 1em;
+}
+
+.tag-small .entry-content a {
+	flex: 0 0 60%;
+}
+
+.tag-medium .entry-content a {
+	flex: 0 0 75%;
+}
+
+.tag-large .entry-content a {
+	flex: 0 0 85%;
 }
 
 .entry-field {
@@ -937,32 +957,8 @@ textarea {
 	padding-bottom: 0.15em;
 }
 
-.wwa_artwork {
-	display: flex;
-	flex-flow: column;
-	margin-top: 2em;
-}
 
-.entry-content-front {
-	display: flex;
-	justify-content: center;
-	/* background-color: #f0f0f0; */
-	line-height: 0;
-	padding: 1em 0;
-	margin-top: 1em;
-}
 
-.tag-small .entry-content-front a {
-	flex: 0 0 60%;
-}
-
-.tag-medium .entry-content-front a {
-	flex: 0 0 75%;
-}
-
-.tag-large .entry-content-front a {
-	flex: 0 0 85%;
-}
 
 .entry-caption {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
