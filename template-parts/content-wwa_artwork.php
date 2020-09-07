@@ -22,7 +22,6 @@
     <?php
     endif;
     ?>
-    
   </div><!--.entry-content -->
   <div class="entry-caption">
     <?php
@@ -44,6 +43,4 @@
     endif;
     ?>
   </div><!-- entry-caption -->
- 
-
  </article>
