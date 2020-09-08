@@ -923,8 +923,20 @@ textarea {
 	flex-flow: row wrap;
 	/* background-color: #f0f0f0; */
 	/* line-height: 0; */
-	padding: 1em 0;
-	margin-top: 1em;
+	/* padding: 1em 0; */
+	margin: 1.5em 0 0;
+}
+
+.entry-content:first-child {
+	margin: 0;
+}
+
+.entry-content-heading {
+	font-weight: normal;
+	text-transform: capitalize;
+	border-bottom: 1px solid #e1e1e1;
+	flex: 1 0 auto;
+	margin: 0;
 }
 
 .tag-small .entry-content a {
@@ -961,9 +973,6 @@ textarea {
 	padding-bottom: 0.15em;
 }
 
-
-
-
 .entry-caption {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-size: 0.75em;
@@ -982,12 +991,6 @@ textarea {
 
 .updated:not(.published) {
 	display: none;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
 }
 
 .page-links {
