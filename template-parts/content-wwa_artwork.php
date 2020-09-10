@@ -8,7 +8,7 @@
 ?>
 
  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <div class="entry-content">
+  <div class="<?php echo get_post_type()?>__image">
     <?php $image = wp_get_attachment_image_src( get_field('image'), 'large'); 
     if ( is_singular() ) : ?>
     <a href="javascript:history.back()">
@@ -22,8 +22,8 @@
     <?php
     endif;
     ?>
-  </div><!--.entry-content -->
-  <div class="entry-caption">
+  </div><!--.*__image -->
+  <div class="<?php echo get_post_type()?>__caption">
     <?php
     if ( is_singular() ) :
       the_title( '<h2 class="entry-title">', '</h2>' );

@@ -893,37 +893,41 @@ textarea {
 /* Posts and pages
 --------------------------------------------- */
 .main-section {
-	width: 22em;
-	margin: 2em auto 0;
+	width: 21.438rem;
+	margin: 2rem auto 0;
 }
 
-.main-section-title {
+.main-section-title,
+.article-content-title {
 	border-bottom: 1px solid #e1e1e1;
 	line-height: 1em;
 	/* margin: 2em 0 0; */
-	/* margin: 0; */
+	margin: 0 auto 3rem;
 }
 
-.main-section-title__heading {
+.main-section-title__heading,
+.article-content__heading {
 	font-size: 1.5em;
 	font-weight: normal;
 	text-transform: capitalize;
-	margin: 0 auto 0.5em;
+	margin: 0 auto 0.5rem;
 }
 
-.site-main-section-subheading {
+.article-content__subheading {
 	font-weight: normal;
+}
+
+.article-content__body {
+	hyphens: auto;
 }
 
 .main-section-content {
 	display: flex;
 	flex-flow: row wrap;
-	margin: 3rem auto 0;
+	margin: 0 auto;
 }
 
 .wwa_artwork {
-	flex: 0 1 95%;
-	margin: 0 auto;
 	display: flex;
 	flex-flow: row wrap;
 }
@@ -932,8 +936,13 @@ textarea {
 	margin-top: 4rem;
 }
 
-.wwa_artwork__caption {
+.wwa_artwork__image {
+	flex: 0 1 95%;
 	margin: 0 auto;
+}
+
+.wwa_artwork__caption {
+	margin: 0.75rem auto 0;
 }
 
 .entry-content-heading {
@@ -942,6 +951,7 @@ textarea {
 	border-bottom: 1px solid #e1e1e1;
 	flex: 1 0 auto;
 	margin: 0;
+	line-height: 1rem;
 }
 
 .tag-small {
