@@ -8,8 +8,8 @@
  get_header();
  ?>
 
- <main id="primary" class="site-main">
-  <section class="site-main-section">
+ <main id="primary">
+  <section class="main-section">
     <?php
     while ( have_posts() ) :
       the_post(  );
