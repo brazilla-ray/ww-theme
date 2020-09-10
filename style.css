@@ -396,6 +396,10 @@ html {
 
 /* Typography
 --------------------------------------------- */
+html {
+	font-size: 16px;
+}
+
 body,
 button,
 input,
@@ -888,47 +892,48 @@ textarea {
 
 /* Posts and pages
 --------------------------------------------- */
-.site-main {
-	display: flex;
-	flex-flow: row wrap;
+.main-section {
+	width: 22em;
+	margin: 2em auto 0;
 }
 
-.site-main-section {
-	flex: 0 0 90%;
-	margin: 1em auto 0;
+.main-section-title {
+	border-bottom: 1px solid #e1e1e1;
+	line-height: 1em;
+	/* margin: 2em 0 0; */
+	/* margin: 0; */
 }
 
-.site-main-section-header h2 {
+.main-section-title__heading {
 	font-size: 1.5em;
 	font-weight: normal;
 	text-transform: capitalize;
-	border-bottom: 1px solid #e1e1e1;
-	/* margin: 2em 0 0; */
-	margin: 0;
+	margin: 0 auto 0.5em;
 }
 
 .site-main-section-subheading {
 	font-weight: normal;
 }
 
-.wwa_artwork {
+.main-section-content {
 	display: flex;
-	flex-flow: column;
-	margin-top: 1em;
-}
-
-.entry-content {
-	display: flex;
-	/* justify-content: center; */
 	flex-flow: row wrap;
-	/* background-color: #f0f0f0; */
-	/* line-height: 0; */
-	/* padding: 1em 0; */
-	margin: 1.5em 0 0;
+	margin: 3rem auto 0;
 }
 
-.entry-content:first-child {
-	margin: 0;
+.wwa_artwork {
+	flex: 0 1 95%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.wwa_artwork:nth-child(n+2) {
+	margin-top: 4rem;
+}
+
+.wwa_artwork__caption {
+	margin: 0 auto;
 }
 
 .entry-content-heading {
@@ -939,18 +944,18 @@ textarea {
 	margin: 0;
 }
 
-.tag-small .entry-content a {
-	flex: 0 0 60%;
+.tag-small {
+	flex: 0 0 12.500rem;
 	margin: 0 auto;
 }
 
-.tag-medium .entry-content a {
-	flex: 0 0 75%;
+.tag-medium {
+	flex: 0 0 15.625rem;
 	margin: 0 auto;
 }
 
-.tag-large .entry-content a {
-	flex: 0 0 85%;
+.tag-large {
+	flex: 0 0 18.750rem;
 	margin: 0 auto;
 }
 
@@ -1020,12 +1025,12 @@ textarea {
 	}
 
 	.site-main-section article {
-		flex: 0 1 40%;
+		flex: 0 0 100%;
 		/* margin: 3em auto; */
 		margin-top: 3em;
 	}
 
-	.site-main-section article:last-child:nth-child(odd) {
+	.site-main-section .wwa_artwork:last-child:nth-child(odd) {
 		margin: 3em auto 0;
 		flex: 0 0 40%;
 	}
@@ -1035,10 +1040,10 @@ textarea {
 		/* background-color: #f0f0f0; */
 	}
 
-	.wwa_artwork {
+	/* .wwa_artwork {
 		justify-content: flex-end;
 		margin-top: 5em;
-	}
+	} */
 
 	.entry-caption-front {
 		margin: 0 auto 0.25em;
