@@ -936,22 +936,9 @@ textarea {
 	margin-top: 4rem;
 }
 
-.wwa_artwork__image {
+.wwa_artwork-image {
 	flex: 0 1 95%;
 	margin: 0 auto;
-}
-
-.wwa_artwork__caption {
-	margin: 0.75rem auto 0;
-}
-
-.entry-content-heading {
-	font-weight: normal;
-	text-transform: capitalize;
-	border-bottom: 1px solid #e1e1e1;
-	flex: 1 0 auto;
-	margin: 0;
-	line-height: 1rem;
 }
 
 .tag-small {
@@ -969,30 +956,31 @@ textarea {
 	margin: 0 auto;
 }
 
-.entry-field {
-	font-size: 0.75em;
-	/* font-style: italic; */
-	margin: 0;
+.wwa_artwork-caption {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	/* font-size: 0.75em; */
+	margin: 1rem auto 0;
 }
 
-.entry-title {
+.wwa_artwork-caption__title {
+	display: block;
+	margin: 0;
 	font-size: 1em;
 	font-weight: normal;
-	margin: 0;
+	width: max-content;
 }
 
-.entry-title a {
+.wwa_artwork-caption__anchor {
 	color: #555555;
 	text-decoration: none;
 	border-bottom: 1px solid #b80bd8;
 	padding-bottom: 0.15em;
 }
 
-.entry-caption {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.wwa_artwork-caption__field {
 	font-size: 0.75em;
-	align-self: center;
-	margin: 0.5em 0 0;
+	/* font-style: italic; */
+	margin: 0;
 }
 
 .sticky {

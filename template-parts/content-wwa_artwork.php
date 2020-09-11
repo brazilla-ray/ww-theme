@@ -8,7 +8,7 @@
 ?>
 
  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <div class="<?php echo get_post_type()?>__image">
+  <div class="<?php echo get_post_type()?>-image">
     <?php $image = wp_get_attachment_image_src( get_field('image'), 'large'); 
     if ( is_singular() ) : ?>
     <a href="javascript:history.back()">
@@ -22,19 +22,19 @@
     <?php
     endif;
     ?>
-  </div><!--.*__image -->
-  <div class="<?php echo get_post_type()?>__caption">
+  </div><!--.*-image -->
+  <div class="<?php echo get_post_type()?>-caption">
     <?php
     if ( is_singular() ) :
-      the_title( '<h2 class="entry-title">', '</h2>' );
+      the_title( '<h2 class="' . get_post_type() . '-caption__title">', '</h2>' );
     ?>
-      <p class="entry-field">
+      <p class="<?php echo get_post_type()?>-caption__field">
         <?php the_field( 'medium' ); ?>
       </p>
-      <p class="entry-field">
+      <p class="<?php echo get_post_type()?>-caption__field">
         <?php the_field( 'date' ); ?>
       </p>
-      <p class="entry-field">
+      <p class="<?php echo get_post_type()?>-caption__field">
         <? the_field( 'dimensions' ); ?>
       </p>
     <?php
