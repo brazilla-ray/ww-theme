@@ -39,7 +39,7 @@
       </p>
     <?php
     else :
-      the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+      the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="' . get_post_type() . '-caption__title ' . get_post_type() . '-caption__anchor">', '</a>' );
     endif;
     ?>
   </div><!-- entry-caption -->
