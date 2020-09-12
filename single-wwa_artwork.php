@@ -13,7 +13,7 @@
     'template-parts/content',
     'section',
     array(
-      'sectionTitle' => 'Artwork',
+      'sectionTitle' => false,
       'templatePart' => 'wwa_artwork_single'
     )
   );

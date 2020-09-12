@@ -1,5 +1,5 @@
 <section class="main-section">
-  <?php if ( !( is_page( 'about' ) ) ) : ?>
+  <?php if ( !( is_page( 'about' ) || is_singular() ) ) : ?>
   <header class="main-section-title">
     <h2 class="main-section-title__heading">
       <?php echo $args['sectionTitle']; ?>
