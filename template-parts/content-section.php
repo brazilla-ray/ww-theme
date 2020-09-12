@@ -4,8 +4,21 @@
     <h2 class="main-section-title__heading">
       <?php echo $args['sectionTitle']; ?>
     </h2>
+  <?php endif;
+  if ( is_post_type_archive( 'wwa_artwork' ) ) :
+    wp_nav_menu( 
+      array( 
+        'ww-theme' => 'artwork',
+        'container' => 'nav',
+        'container_class' => 'artwork-navigation',
+        'menu_class' => 'artwork-menu',
+        'add_li_class' => 'artwork-menu__item'
+        ) 
+      );
+    endif; 
+  ?>
   </header><!-- main-section__header -->
-  <?php endif ?>
+ 
 
   <div class="main-section-content"> 
     <?php

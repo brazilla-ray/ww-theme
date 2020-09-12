@@ -51,6 +51,7 @@ if ( ! function_exists( 'ww_theme_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'ww-theme' ),
+				'artwork' => esc_html__( 'Artwork', 'ww-theme')
 			)
 		);
 
@@ -181,3 +182,17 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function add_additional_class_on_li( $classes, $item, $args ) {
+	if( isset( $args->add_li_class ) ) {
+		$classes[] = $args->add_li_class;
+	}
+	return $classes;
+}
+add_filter( 'nav_menu_css_class', 'add_additional_class_on_li', 1, 3 );
+
+function add_class_to_all_menu_anchors( $atts ) {
+	$atts['class'] = 'artwork-menu__anchor';
+
+	return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'add_class_to_all_menu_anchors', 10 );

@@ -824,6 +824,28 @@ textarea {
 	text-align: right;
 } */
 
+.artwork-navigation {
+	width: 100%;
+}
+
+.artwork-menu {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.artwork-menu__item {
+	list-style: none;
+}
+
+.artwork-menu__anchor {
+	text-decoration: none;
+	color: #555555;
+	border-bottom: 1px solid #b80bd8;
+}
+
 @media screen and (min-width: 37.5em) {
 
 	.site-header {
@@ -899,10 +921,9 @@ textarea {
 
 .main-section-title,
 .article-content-title {
-	border-bottom: 1px solid #e1e1e1;
 	line-height: 1em;
 	/* margin: 2em 0 0; */
-	margin: 0 auto 3rem;
+	margin: 0 auto;
 }
 
 .main-section-title__heading,
@@ -911,6 +932,7 @@ textarea {
 	font-weight: normal;
 	text-transform: capitalize;
 	margin: 0 auto 0.5rem;
+	border-bottom: 1px solid #e1e1e1;
 }
 
 .article-content__subheading {
@@ -924,7 +946,7 @@ textarea {
 .main-section-content {
 	display: flex;
 	flex-flow: row wrap;
-	margin: 0 auto;
+	margin: 3rem auto;
 }
 
 .wwa_artwork {
