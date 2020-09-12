@@ -838,13 +838,33 @@ textarea {
 
 .artwork-menu__item {
 	list-style: none;
+	text-align: center;
+	background-color: #555555;
+	flex: 0 0 49%;
+	padding: 0.5rem 0;
+}
+
+.artwork-menu__item a:link {
+	color: #ffffff;
+}
+
+.artwork-menu__item a:hover {
+	color: #ffffff;
+}
+
+.artwork-menu__item a:active {
+	color: #ffffff;
+}
+
+.artwork-menu__item a:visited {
+	color: #ffffff;
 }
 
 .artwork-menu__anchor {
 	text-decoration: none;
-	color: #555555;
-	border-bottom: 1px solid #b80bd8;
+	color: #ffffff;
 }
+
 
 @media screen and (min-width: 37.5em) {
 
