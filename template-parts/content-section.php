@@ -29,10 +29,10 @@
       );
     endif; 
   
-  if ( is_tax( 'wwa_type', 'gouache' ) ) :
+  if ( ( is_tax( 'wwa_type', 'gouache' ) ) || ( is_tax( 'wwa_type', 'acrylic' ) ) ) :
     wp_nav_menu(
       array(
-        'menu' => 'gouaches',
+        'menu' => 'paintings_sub',
         'container' => 'nav',
         'container_class' => 'artwork-navigation',
         'menu_class' => 'artwork-menu',
