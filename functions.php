@@ -47,14 +47,6 @@ if ( ! function_exists( 'ww_theme_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus(
-			array(
-				'menu-1' => esc_html__( 'Primary', 'ww-theme' ),
-				'artwork' => esc_html__( 'Artwork', 'ww-theme')
-			)
-		);
-
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -154,6 +146,12 @@ function ww_theme_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ww_theme_scripts' );
+
+/**
+ * Custom menus for this theme.
+ */
+
+require get_template_directory() . '/inc/custom-menus.php';
 
 /**
  * Implement the Custom Header feature.
