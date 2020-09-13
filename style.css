@@ -841,7 +841,7 @@ textarea {
 	text-align: center;
 	background-color: #e1e1e1;
 	flex: 1 0 auto;
-	padding: 0.5rem 1rem;
+	/* padding: 0.5rem 1rem; */
 	margin: 3px 3px;
 }
 
@@ -863,6 +863,10 @@ textarea {
 
 .artwork-menu__anchor {
 	text-decoration: none;
+	display: block;
+	width: 100%;
+	line-height: 3;
+
 	/* color: #ffffff; */
 }
 
