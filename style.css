@@ -1097,6 +1097,14 @@ textarea {
 	}
 }
 
+/* Forms
+--------------------------------------------- */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+	width: 100%;
+}
+
 /* Footer
 --------------------------------------------- */
 .site-footer {

@@ -9,10 +9,12 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="article-content">
-		<?php
-		the_content()
-		?>
-	</div><!-- .article-content -->
-</article><!-- #post-<?php the_ID(); ?> -->
+<section class="main-section">
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<div class="article-content">
+			<?php
+			the_content()
+			?>
+		</div><!-- .article-content -->
+	</article><!-- #post-<?php the_ID(); ?> -->
+</section>
