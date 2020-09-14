@@ -14,45 +14,40 @@
         'menu_class' => 'artwork-menu',
         'add_li_class' => 'artwork-menu__item'
         ) 
-      ); 
-    endif;
-
-  if ( is_tax( 'wwa_type', 'painting' ) ) :
-    wp_nav_menu(
-      array(
-        'menu' => 'paintings',
-        'container' => 'nav',
-        'container_class' => 'artwork-navigation',
-        'menu_class' => 'artwork-menu',
-        'add_li_class' => 'artwork-menu__item'
-        )
-      );
-    endif; 
-  
-  if ( ( is_tax( 'wwa_type', 'gouache' ) ) || ( is_tax( 'wwa_type', 'acrylic' ) ) ) :
-    wp_nav_menu(
-      array(
-        'menu' => 'paintings_sub',
-        'container' => 'nav',
-        'container_class' => 'artwork-navigation',
-        'menu_class' => 'artwork-menu',
-        'add_li_class' => 'artwork-menu__item'
-        )
-      );
-  endif;
-
-  if ( ( is_tax( 'wwa_type', 'collage' ) ) || ( is_tax( 'wwa_type', 'drawing' ) ) ) :
-    wp_nav_menu(
-      array(
-        'menu' => 'other',
-        'container' => 'nav',
-        'container_class' => 'artwork-navigation',
-        'menu_class' => 'artwork-menu',
-        'add_li_class' => 'artwork-menu__item'
-        )
-      );
-  endif;
-  ?>
+      ); elseif ( is_tax( 'wwa_type', 'painting' ) ) :
+          wp_nav_menu(
+            array(
+              'menu' => 'paintings',
+              'container' => 'nav',
+              'container_class' => 'artwork-navigation',
+              'menu_class' => 'artwork-menu',
+              'add_li_class' => 'artwork-menu__item'
+              )
+            ); elseif ( 
+              ( is_tax( 'wwa_type', 'gouache' ) ) || 
+              ( is_tax( 'wwa_type', 'acrylic' ) ) ) :
+                wp_nav_menu(
+                  array(
+                    'menu' => 'paintings_sub',
+                    'container' => 'nav',
+                    'container_class' => 'artwork-navigation',
+                    'menu_class' => 'artwork-menu',
+                    'add_li_class' => 'artwork-menu__item'
+                    )
+                  ); elseif ( 
+                    ( is_tax( 'wwa_type', 'collage' ) ) || 
+                    ( is_tax( 'wwa_type', 'drawing' ) ) ) :
+                      wp_nav_menu(
+                        array(
+                          'menu' => 'other',
+                          'container' => 'nav',
+                          'container_class' => 'artwork-navigation',
+                          'menu_class' => 'artwork-menu',
+                          'add_li_class' => 'artwork-menu__item'
+                          )
+                        );
+                      endif;
+                      ?>
   </header><!-- main-section__header -->
  
 
