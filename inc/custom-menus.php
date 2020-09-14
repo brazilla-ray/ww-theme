@@ -5,7 +5,8 @@ function register_ww_menus() {
       'menu-1' => esc_html__( 'Primary', 'ww-theme' ),
       'artwork' => esc_html__( 'Artwork', 'ww-theme' ),
       'paintings' => esc_html__( 'Paintings', 'ww-theme' ),
-      'paintings_sub' => esc_html__( 'paintings_sub', 'ww-theme' )
+      'paintings_sub' => esc_html__( 'paintings_sub', 'ww-theme' ),
+      'other' => esc_html__( 'other', 'ww-theme' )
     )
   );
 }

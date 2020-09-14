@@ -843,6 +843,8 @@ textarea {
 	flex: 1 0 auto;
 	/* padding: 0.5rem 1rem; */
 	margin: 3px 3px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	line-height: 3;
 }
 
 .artwork-menu__item a:link {
@@ -850,7 +852,7 @@ textarea {
 }
 
 .artwork-menu__item a:hover {
-	color: #555555;
+	color: #b80bd8;
 }
 
 .artwork-menu__item a:active {
@@ -858,16 +860,15 @@ textarea {
 }
 
 .artwork-menu__item a:visited {
-	color: #555555;
+	color: #b80bd8;
 }
 
 .artwork-menu__anchor {
 	text-decoration: none;
-	display: block;
-	width: 100%;
-	line-height: 3;
-
-	/* color: #ffffff; */
+	border-bottom: 1px solid #b80bd8;
+	padding-bottom: 0.25rem;
+	/* display: block;
+	width: 100%; */
 }
 
 

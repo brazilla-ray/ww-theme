@@ -40,6 +40,18 @@
         )
       );
   endif;
+
+  if ( ( is_tax( 'wwa_type', 'collage' ) ) || ( is_tax( 'wwa_type', 'drawing' ) ) ) :
+    wp_nav_menu(
+      array(
+        'menu' => 'other',
+        'container' => 'nav',
+        'container_class' => 'artwork-navigation',
+        'menu_class' => 'artwork-menu',
+        'add_li_class' => 'artwork-menu__item'
+        )
+      );
+  endif;
   ?>
   </header><!-- main-section__header -->
  
