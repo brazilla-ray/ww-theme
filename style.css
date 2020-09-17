@@ -906,7 +906,7 @@ textarea {
 		border: none;
 	}
 
-	.menu-item {
+	.nav-menu > .menu-item {
 		padding-left: 30px;
 	}
 }
@@ -950,6 +950,15 @@ textarea {
 	line-height: 1em;
 	/* margin: 2em 0 0; */
 	margin: 0 auto;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	background-image:
+		linear-gradient(
+			#ffffff 80%, 
+			rgba(255,255,255,0)
+		);
+	padding: 1rem 0 0.25rem;
 }
 
 .main-section-title__heading,
@@ -1013,7 +1022,7 @@ textarea {
 
 .wwa_artwork-caption__title {
 	display: block;
-	margin: 0;
+	margin: 0 auto;
 	font-size: 1em;
 	font-weight: normal;
 	width: max-content;
@@ -1033,7 +1042,7 @@ textarea {
 }
 
 .sticky {
-	display: block;
+	position: ;
 }
 
 .post,
@@ -1051,50 +1060,44 @@ textarea {
 }
 
 @media screen and (min-width: 37.5em) {
-	.site-main {
-		margin: 1em 9em 0;
-	}
-	.site-main-section {
+	.main-section {
+		width: 80%;
 		display: flex;
 		flex-flow: row wrap;
+	}
+
+	.main-section-title {
+		flex: 1 0 25%;
+	}
+
+	.main-section-content {
+		flex: 1 0 75%;
+		margin: 3rem auto;
+		display: block;
+	}
+
+	.wwa_artwork {
+		display: block;
+	}
+
+	.tag-small {
+		width: 20%;
 		margin: 0 auto;
 	}
 
-	.site-main-section-header {
-		flex: 1 0 100%;
+	.tag-medium {
+		width: 30%;
+		margin: 0 auto;
 	}
 
-	.site-main-section-content {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		margin-top: 3em;
+	.tag-large {
+		width: 40%;
+		margin: 0 auto;
 	}
-
-	.site-main-section article {
-		flex: 0 0 100%;
-		/* margin: 3em auto; */
-		margin-top: 3em;
-	}
-
-	.site-main-section .wwa_artwork:last-child:nth-child(odd) {
+	/* .site-main-section .wwa_artwork:last-child:nth-child(odd) {
 		margin: 3em auto 0;
 		flex: 0 0 40%;
-	}
-
-	.entry-content-front {
-		margin: auto;
-		/* background-color: #f0f0f0; */
-	}
-
-	/* .wwa_artwork {
-		justify-content: flex-end;
-		margin-top: 5em;
 	} */
-
-	.entry-caption-front {
-		margin: 0 auto 0.25em;
-	}
 }
 
 /* Forms
@@ -1108,7 +1111,7 @@ textarea {
 /* Footer
 --------------------------------------------- */
 .site-footer {
-	margin: 500px auto 0;
+	margin: 0 auto;
 }
 
 /* Comments
