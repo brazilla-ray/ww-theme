@@ -953,11 +953,13 @@ textarea {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0px;
-	background-image:
+	box-shadow: 0 2px rgba(255, 255, 255, 0.8);
+	background-color: #ffffff;
+	/* background-image:
 		linear-gradient(
 			#ffffff 80%, 
 			rgba(255,255,255,0)
-		);
+		); */
 	padding: 1rem 0 0.25rem;
 }
 
@@ -982,12 +984,13 @@ textarea {
 .main-section-content {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
 	margin: 3rem auto;
 }
 
 .wwa_artwork {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column;
 }
 
 .wwa_artwork:nth-child(n+2) {
@@ -995,12 +998,13 @@ textarea {
 }
 
 .wwa_artwork-image {
-	flex: 0 1 95%;
+	/* flex: 0 1 95%; */
 	margin: 0 auto;
 }
 
-.tag-small {
-	flex: 0 0 12.500rem;
+.tag-small > .wwa_artwork-image {
+	/* flex: 0 0 12.500rem; */
+	width: 12.5rem;
 	margin: 0 auto;
 }
 
