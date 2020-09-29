@@ -961,6 +961,7 @@ textarea {
 			rgba(255,255,255,0)
 		); */
 	padding: 1rem 0 0.25rem;
+	align-self: flex-start;
 }
 
 .main-section-title__heading,
