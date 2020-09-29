@@ -1078,7 +1078,8 @@ textarea {
 	.main-section-content {
 		flex: 1 0 75%;
 		margin: 3rem auto;
-		display: block;
+		display: flex;
+		flex-flow: column nowrap;
 	}
 
 	.wwa_artwork {
@@ -1088,11 +1089,13 @@ textarea {
 	.tag-small {
 		width: 20%;
 		margin: 0 auto;
+		order: 3;
 	}
 
 	.tag-medium {
 		width: 30%;
 		margin: 0 auto;
+		order: 2;
 	}
 
 	.tag-large {
