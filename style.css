@@ -1069,6 +1069,7 @@ textarea {
 		width: 80%;
 		display: flex;
 		flex-flow: row wrap;
+		justify-content: center;
 	}
 
 	.main-section-title {
@@ -1079,27 +1080,13 @@ textarea {
 		margin: 0;
 		display: flex;
 		flex-flow: column nowrap;
-		width: 100%;
+		width: 60%;
 	}
 
 	.wwa_artwork {
 		display: flex;
 		flex-flow: row-reverse nowrap;
 		justify-content: space-between;
-		margin: 0;
-	}
-
-	.tag-small {
-		margin: 0;
-		order: 3;
-	}
-
-	.tag-medium {
-		margin: 0;
-		order: 2;
-	}
-
-	.tag-large {
 		margin: 0;
 	}
 
