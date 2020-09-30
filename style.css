@@ -1006,17 +1006,17 @@ textarea {
 .tag-small > .wwa_artwork-image {
 	/* flex: 0 0 12.500rem; */
 	width: 12.5rem;
-	margin: 0 auto;
+	margin: 0;
 }
 
-.tag-medium {
-	flex: 0 0 15.625rem;
-	margin: 0 auto;
+.tag-medium > .wwa_artwork-image {
+	width: 15.625rem;
+	margin: 0;
 }
 
-.tag-large {
-	flex: 0 0 18.750rem;
-	margin: 0 auto;
+.tag-large > .wwa_artwork-image {
+	width: 18.750rem;
+	margin: 0;
 }
 
 .wwa_artwork-caption {
@@ -1072,35 +1072,43 @@ textarea {
 	}
 
 	.main-section-title {
-		flex: 1 0 25%;
+		width: 100%;
 	}
 
 	.main-section-content {
-		flex: 1 0 75%;
-		margin: 3rem auto;
+		margin: 0;
 		display: flex;
 		flex-flow: column nowrap;
+		width: 100%;
 	}
 
 	.wwa_artwork {
-		display: block;
+		display: flex;
+		flex-flow: row-reverse nowrap;
+		justify-content: space-between;
+		margin: 0;
 	}
 
 	.tag-small {
-		width: 20%;
-		margin: 0 auto;
+		margin: 0;
 		order: 3;
 	}
 
 	.tag-medium {
-		width: 30%;
-		margin: 0 auto;
+		margin: 0;
 		order: 2;
 	}
 
 	.tag-large {
-		width: 40%;
-		margin: 0 auto;
+		margin: 0;
+	}
+
+	.wwa_artwork-caption {
+		margin: 0;
+		position: sticky;
+		top: 80px;
+		align-self: flex-start;
+		z-index: -999;
 	}
 	/* .site-main-section .wwa_artwork:last-child:nth-child(odd) {
 		margin: 3em auto 0;
