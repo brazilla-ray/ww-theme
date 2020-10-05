@@ -1092,10 +1092,6 @@ textarea {
 
 	.wwa_artwork-caption {
 		margin: 0;
-		position: sticky;
-		top: 80px;
-		align-self: flex-start;
-		z-index: -999;
 	}
 	/* .site-main-section .wwa_artwork:last-child:nth-child(odd) {
 		margin: 3em auto 0;
