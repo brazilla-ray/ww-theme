@@ -1079,20 +1079,27 @@ textarea {
 	.main-section-content {
 		margin: 0;
 		display: flex;
-		flex-flow: column nowrap;
-		width: 60%;
+		flex-flow: row wrap;
+		justify-content: space-between;
 	}
 
 	.wwa_artwork {
-		display: flex;
-		flex-flow: row-reverse nowrap;
-		justify-content: space-between;
 		margin: 0;
+		align-self: center;
+		flex: 1 0 33%;
+	}
+
+	.wwa_artwork-image {
+		align-self: center;
 	}
 
 	.wwa_artwork-caption {
 		margin: 0;
 	}
+
+	/* .wwa_artwork:nth-child(n+2) {
+		margin-top: 0;
+	} */
 	/* .site-main-section .wwa_artwork:last-child:nth-child(odd) {
 		margin: 3em auto 0;
 		flex: 0 0 40%;
