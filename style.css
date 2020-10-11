@@ -986,11 +986,11 @@ textarea {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin: 3rem auto;
+	margin: 0 auto;
 }
 
 .wwa_artwork {
-	margin-top: 6rem;
+	margin-top: 2rem;
 	display: flex;
 	flex-flow: column;
 }
@@ -1091,12 +1091,9 @@ textarea {
 		justify-content: space-between;
 	}
 
-	.wwa_artwork-image {
-		align-self: center;
-	}
-
 	.wwa_artwork-caption {
 		margin: 0;
+		padding-left: 3rem;
 	}
 
 	/* .wwa_artwork:nth-child(n+2) {
