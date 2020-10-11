@@ -990,13 +990,14 @@ textarea {
 }
 
 .wwa_artwork {
+	margin-top: 6rem;
 	display: flex;
 	flex-flow: column;
 }
-
+/* 
 .wwa_artwork:nth-child(n+2) {
 	margin-top: 4rem;
-}
+} */
 
 .wwa_artwork-image {
 	/* flex: 0 1 95%; */
@@ -1084,9 +1085,10 @@ textarea {
 	}
 
 	.wwa_artwork {
-		margin: 0;
-		align-self: center;
-		flex: 1 0 33%;
+		/* align-self: center; */
+		flex: 1 0 100%;
+		flex-flow: row-reverse wrap;
+		justify-content: space-between;
 	}
 
 	.wwa_artwork-image {
