@@ -14,8 +14,6 @@
     </a>
   </div><!--.*-image -->
   <div class="<?php echo get_post_type()?>-caption">
-    <?php
-      the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="' . get_post_type() . '-caption__title ' . get_post_type() . '-caption__anchor">', '</a>' );
-    ?><!--.*-caption_title -->
+    <a href="<?php echo esc_url( get_permalink() )?>" rel="bookmark" class="<?php echo get_post_type(); ?>-caption__title <?php echo get_post_type(); ?>-caption__anchor"><?php  the_field('title'); ?></a><!--.*-caption_title -->
   </div><!-- .*-caption -->
  </article>
