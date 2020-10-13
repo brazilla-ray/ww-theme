@@ -1020,6 +1020,10 @@ textarea {
 	margin: 0;
 }
 
+.wwa_artwork-image-single {
+	width: 250px;
+}
+
 .wwa_artwork-caption {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	/* font-size: 0.75em; */
@@ -1070,7 +1074,7 @@ textarea {
 		width: 80%;
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: center;
+		justify-content: space-around;
 	}
 
 	.main-section-title {
@@ -1078,6 +1082,7 @@ textarea {
 	}
 
 	.main-section-content {
+		width: 90%;
 		margin: 0;
 		display: flex;
 		flex-flow: row wrap;
@@ -1089,6 +1094,10 @@ textarea {
 		flex: 1 0 100%;
 		flex-flow: row-reverse wrap;
 		justify-content: space-between;
+	}
+
+	.wwa_artwork-image-single {
+		width: 400px;
 	}
 
 	.wwa_artwork-caption {

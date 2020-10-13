@@ -8,8 +8,8 @@
 ?>
 
  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <div class="<?php echo get_post_type()?>-image">
-    <?php $image = wp_get_attachment_image_src( get_field('image'), 'large'); 
+  <div class="<?php echo get_post_type()?>-image-single">
+    <?php $image = wp_get_attachment_image_src( get_field('image'), 'full' ); 
     if ( is_singular() ) : ?>
     <a href="javascript:history.back()">
       <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image'))?>" />
