@@ -1071,7 +1071,7 @@ textarea {
 
 @media screen and (min-width: 37.5em) {
 	.main-section {
-		width: 80%;
+		width: 56.875rem;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-around;
