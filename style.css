@@ -693,10 +693,6 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 
-/* .menu, .sub-menu {
-	display: flex;
-	flex-flow: row wrap;
-} */
 .menu-navigation-container {
 	margin-top: 2em;
 }
@@ -706,17 +702,11 @@ textarea {
 	margin-top: 0.5em;
 }
 
-/* .menu-item:active li {
-	background-color: red;
-} */
-
 .sub-menu a {
 	padding-left: 1em;
 }
 
 .main-navigation {
-	/* display: block; */
-	/* width: 100%; */
 	flex-basis: 100%;
 }
 
@@ -729,8 +719,6 @@ textarea {
 }
 
 .main-navigation ul {
-	/* display: flex; */
-	/* flex-flow: row wrap; */
 	display: none;
 	list-style: none;
 	margin: 0;
@@ -738,21 +726,11 @@ textarea {
 }
 
 .main-navigation ul ul {
-	/* box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); */
-	/* float: left; */
 	position: absolute;
 	top: 100%;
 	left: -999em;
 	z-index: 99999;
 }
-
-/* .main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-} */
-/* .main-navigation ul:focus-within { */
-	/* outline: 2px solid #b80bd8; */
-/* } */
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
@@ -760,24 +738,12 @@ textarea {
 	left: auto;
 }
 
-/* .main-navigation ul ul a {
-	width: 100%;
-} */
-
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
 	left: auto;
 	position: relative;
 	left: 0;
 }
-
-/* .main-navigation ul li.focus > a {
-	outline: 2px solid #b80bd8;
-} */
-
-/* .main-navigation li {
-	position: relative;
-} */
 
 .main-navigation a {
 	display: block;
@@ -813,17 +779,6 @@ textarea {
 	outline: thin dotted;
 }
 
-/* .menu-toggle,
-.main-navigation.toggled li {
-	width: 100%;
-	text-align: center;
-} */
-
-/* .menu-burger {
-	width: 100%;
-	text-align: right;
-} */
-
 .artwork-navigation {
 	width: 100%;
 }
@@ -841,7 +796,6 @@ textarea {
 	text-align: center;
 	background-color: #e1e1e1;
 	flex: 1 0 auto;
-	/* padding: 0.5rem 1rem; */
 	margin: 3px 3px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	line-height: 3;
@@ -867,8 +821,6 @@ textarea {
 	text-decoration: none;
 	border-bottom: 1px solid #b80bd8;
 	padding-bottom: 0.25rem;
-	/* display: block;
-	width: 100%; */
 }
 
 
@@ -911,33 +863,6 @@ textarea {
 	}
 }
 
-/* .site-main .comment-navigation,
-.site-main
-.posts-navigation,
-.site-main
-.post-navigation {
-	margin: 0 0 1.5em;
-} */
-
-/* .comment-navigation .nav-links,
-.posts-navigation .nav-links,
-.post-navigation .nav-links {
-	display: flex;
-} */
-
-/* .comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-	flex: 1 0 50%;
-} */
-
-/* .comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-	text-align: end;
-	flex: 1 0 50%;
-} */
-
 /* Posts and pages
 --------------------------------------------- */
 .main-section {
@@ -948,18 +873,12 @@ textarea {
 .main-section-title,
 .article-content-title {
 	line-height: 1em;
-	/* margin: 2em 0 0; */
 	margin: 0 auto;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0px;
 	box-shadow: 0 2px rgba(255, 255, 255, 0.8);
 	background-color: #ffffff;
-	/* background-image:
-		linear-gradient(
-			#ffffff 80%, 
-			rgba(255,255,255,0)
-		); */
 	padding: 1rem 0 0.25rem;
 	align-self: flex-start;
 }
@@ -994,18 +913,12 @@ textarea {
 	display: flex;
 	flex-flow: column;
 }
-/* 
-.wwa_artwork:nth-child(n+2) {
-	margin-top: 4rem;
-} */
 
 .wwa_artwork-image {
-	/* flex: 0 1 95%; */
 	margin: 0 auto;
 }
 
 .tag-small > .wwa_artwork-image {
-	/* flex: 0 0 12.500rem; */
 	width: 12.5rem;
 	margin: 0;
 }
@@ -1026,7 +939,6 @@ textarea {
 
 .wwa_artwork-caption {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	/* font-size: 0.75em; */
 	margin: 1rem auto 0;
 }
 
@@ -1047,12 +959,7 @@ textarea {
 
 .wwa_artwork-caption__field {
 	font-size: 0.75em;
-	/* font-style: italic; */
 	margin: 0;
-}
-
-.sticky {
-	position: ;
 }
 
 .post,
@@ -1090,7 +997,6 @@ textarea {
 	}
 
 	.wwa_artwork {
-		/* align-self: center; */
 		flex: 1 0 100%;
 		flex-flow: row-reverse wrap;
 		justify-content: space-between;
@@ -1104,14 +1010,6 @@ textarea {
 		margin: 0;
 		padding-left: 3rem;
 	}
-
-	/* .wwa_artwork:nth-child(n+2) {
-		margin-top: 0;
-	} */
-	/* .site-main-section .wwa_artwork:last-child:nth-child(odd) {
-		margin: 3em auto 0;
-		flex: 0 0 40%;
-	} */
 }
 
 /* Forms
