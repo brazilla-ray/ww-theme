@@ -17,6 +17,7 @@
         'templatePart' => 'wwa_artwork'
       )
     );
+    // passing args as in the above only works in 5.5+
     ?>
   </main>
 
