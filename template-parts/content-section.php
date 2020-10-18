@@ -55,7 +55,7 @@
     <?php
       while ( have_posts() ) :
         the_post();
-        get_template_part( 'template-parts/content', $args[templatePart] );
+        get_template_part( 'template-parts/content', $args['templatePart'] );
       endwhile;
     ?>
   </div><!--- main-section__content -->
