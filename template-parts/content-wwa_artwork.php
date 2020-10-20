@@ -24,9 +24,10 @@
 </div><!--.*-image -->
 <div class="<?php echo get_post_type()?>-caption">
   <?php
-  if ( is_singular() ) :
-    the_title( '<h2 class="' . get_post_type() . '-caption__title">', '</h2>' );
-  ?>
+  if ( is_singular() ) : ?>
+    <h2 class="<?php echo get_post_type()?>-caption__title">
+      <?php the_field( 'title' ); ?>
+    </h2>
     <p class="<?php echo get_post_type()?>-caption__field">
       <?php the_field( 'medium' ); ?>
     </p>
@@ -37,8 +38,11 @@
       <? the_field( 'dimensions' ); ?>
     </p>
   <?php
-  else :
-    the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="' . get_post_type() . '-caption__title ' . get_post_type() . '-caption__anchor">', '</a>' );
+  else : ?>
+    <a href="<?php  esc_url( get_permalink() ) ?>" rel="bookmark" class=" <?php echo get_post_type()?>-caption__title <?php echo get_post_type()?>-caption__anchor">
+      <?php the_field( 'title' ); ?>
+    </a>
+  <?php
   endif;
   ?>
 </div><!-- entry-caption -->

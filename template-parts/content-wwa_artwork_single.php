@@ -25,9 +25,10 @@
   </div><!--.*-image -->
   <div class="<?php echo get_post_type()?>-caption">
     <?php
-    if ( is_singular() ) :
-      the_title( '<h2 class="' . get_post_type() . '-caption__title">', '</h2>' );
-    ?>
+    if ( is_singular() ) : ?>
+      <h2 class="<?php echo get_post_type()?>-caption__title">
+        <?php the_field( 'title' ); ?>
+      </h2>
       <p class="<?php echo get_post_type()?>-caption__field">
         <?php the_field( 'medium' ); ?>
       </p>
