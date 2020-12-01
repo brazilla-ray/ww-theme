@@ -9,19 +9,6 @@
  ?>
 
 <main id="primary" class="site-main">
-
-<?php 
-
-// The Query. In this case, we're looking for 'wwa_artwork'.
-
-$args = array(
-  'post_type' => 'wwa_artwork',
-  'tag' => 'recent',
-  'posts_per_page' => -1,
-  'orderby' => 'rand'
-);
-?>
-
   <section class="main-section">
     <header class="main-section-title">
       <h2 class="main-section-title__heading">
@@ -30,6 +17,13 @@ $args = array(
     </header>
 
 <?php
+// The Query. In this case, we're looking for 'wwa_artwork'.
+$args = array(
+  'post_type' => 'wwa_artwork',
+  'tag' => 'recent',
+  'posts_per_page' => -1,
+  'orderby' => 'rand'
+);
 $the_query = new WP_Query( $args );
 // The Loop.
 if ( $the_query->have_posts() ) : 
