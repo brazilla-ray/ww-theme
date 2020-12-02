@@ -48,6 +48,7 @@ if ( $the_query->have_posts() ) :
 else :
   _e( 'Sorry, no posts matched your criteria.', 'textdomain' );
 endif; 
+wp_reset_postdata();
 ?>
 
   </section>
