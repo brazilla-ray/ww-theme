@@ -154,6 +154,11 @@ add_action( 'wp_enqueue_scripts', 'ww_theme_scripts' );
 require get_template_directory() . '/inc/custom-menus.php';
 
 /**
+ * Sets up different menus depending on page.
+ */
+require get_template_directory() . '/inc/conditional-menus.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
