@@ -9,9 +9,11 @@
 <main id="primary" class="site-main">
   <section class="main-section">
     <header class="main-section-title">
-      <h2 class="main-section-title__heading">
-        <?php echo $args['sectionTitle']; ?>
-      </h2>
+      <?php
+      if ( ! $args['sectionTitle'] == '' ) {
+        echo '<h2 class="main-section-title__heading">' . $args['sectionTitle'] . '</h2>';
+      }
+        ?>
     </header>
     <?php
       // The Loop.
