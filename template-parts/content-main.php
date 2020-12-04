@@ -17,7 +17,24 @@
           echo the_title();
         endif;  
       ?>
-      </h2> 
+      </h2>
+      <?php
+      if ( is_post_type_archive( 'wwa_artwork' ) ) :
+        wwa_archive_menu( 'artwork' ); 
+        elseif ( is_tax( 'wwa_type', 'painting' ) ) :
+            wwa_archive_menu( 'paintings' );
+            elseif ( is_tax( 'wwa_type', 'gouache') ) :
+              wwa_archive_menu( 'gouache' );
+              elseif ( is_tax( 'wwa_type', 'acrylic') ) :
+                wwa_archive_menu( 'acrylic' );
+                elseif ( is_tax( 'wwa_type', 'drawing' ) ) :
+                  wwa_archive_menu( 'drawing' );
+                  elseif ( is_tax( 'wwa_type', 'collage' ) ) :
+                    wwa_archive_menu( 'collage' );
+                    elseif ( is_tax( 'wwa_size' ) ) : 
+                      wwa_archive_menu( 'artwork' );
+      endif;
+      ?>
     </header>
       <?php 
       // The Loop.
