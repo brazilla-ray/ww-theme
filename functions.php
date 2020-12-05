@@ -148,12 +148,6 @@ function ww_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'ww_theme_scripts' );
 
 /**
- * Custom menus for this theme.
- */
-
-require get_template_directory() . '/inc/custom-menus.php';
-
-/**
  * Sets up different menus depending on page.
  */
 require get_template_directory() . '/inc/conditional-menus.php';
