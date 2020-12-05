@@ -14,7 +14,7 @@
         if ( ! $args['sectionTitle'] == '' ) :
           echo $args['sectionTitle'];
         else :
-          echo the_title();
+          echo the_field( 'title' );
         endif;  
       ?>
       </h2>
