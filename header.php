@@ -40,11 +40,4 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
-		<test-nav inline-template>
-			<div class="test-menu">
-				<a href="#" class="home" v-on:click="makeActive('home')">home</a>
-				<a href="#" class="about" v-on:click="makeActive('about')">about</a>
-				<p>you chose: {{ active }}</p>
-			</div>
-		</test-nav>
 	</header><!-- #masthead -->
